@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Nav>
-        <a href='#'>
+        <a href='#' rel='noreferrer'>
           <Logo desktop={mQuery.matches} />
         </a>
         <Social>
@@ -34,7 +34,11 @@ const Header = () => {
             <Translate desktop={mQuery.matches} />
             <Span>English</Span>
           </Language>
-          <a href='https://github.com/mvximenko' target='_blank'>
+          <a
+            href='https://github.com/mvximenko'
+            target='_blank'
+            rel='noreferrer'
+          >
             <Span>Github</Span>
           </a>
         </Social>

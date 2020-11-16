@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import Skills from './components/Skills';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout, Container } from './AppStyles';
 
@@ -9,6 +10,7 @@ const App = () => {
       <Layout>
         <Container>
           <Header />
+          <Skills />
         </Container>
       </Layout>
     </>
