@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import Logo from './Logo';
-import Translate from './Translate';
+import Logo from './assets/Logo';
+import Translate from './assets/Translate';
+import useMediaQuery from '../hooks/useMediaQuery';
 import {
   StyledHeader,
   Nav,
@@ -13,15 +13,7 @@ import {
 } from './HeaderStyles';
 
 const Header = () => {
-  const [mQuery, setMQuery] = useState({
-    matches: window.innerWidth > 768 ? true : false,
-  });
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
-    mediaQuery.addEventListener('change', setMQuery);
-    return () => mediaQuery.removeEventListener('change', setMQuery);
-  }, []);
+  const mQuery = useMediaQuery();
 
   return (
     <StyledHeader>
