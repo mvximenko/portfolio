@@ -36,14 +36,12 @@ const Header = () => {
         </Social>
       </Nav>
       <Content>
-        <Heading>I solve problems for people.</Heading>
-        <Paragraph>Hi, I’m George Maximenko.</Paragraph>
+        <Heading>Hi, I’m George Maximenko.</Heading>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
-          neque quae ipsa eveniet ut enim cumque dolores, tempore consectetur
-          optio sapiente quam fugit distinctio totam illo ab rerum? Reiciendis,
-          maxime!
+          I'm experienced front-end developer with a passion to create awesome
+          high-quality products.
         </Paragraph>
+        <Paragraph>Always up for learning new things.</Paragraph>
       </Content>
     </StyledHeader>
   );

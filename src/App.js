@@ -5,20 +5,18 @@ import Footer from './components/Footer';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout, Container } from './AppStyles';
 
-const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Layout>
-        <Container>
-          <Header />
-          <Skills />
-          <Projects />
-        </Container>
-      </Layout>
-      <Footer />
-    </>
-  );
-};
+const App = () => (
+  <>
+    <GlobalStyle />
+    <Layout>
+      <Container>
+        <Header />
+        <Skills />
+        <Projects />
+      </Container>
+    </Layout>
+    <Footer />
+  </>
+);
 
 export default App;

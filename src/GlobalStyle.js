@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background: rgb(242, 248, 255);
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Spartan', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     
