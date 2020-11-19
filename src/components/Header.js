@@ -19,11 +19,11 @@ const Header = () => {
     <StyledHeader>
       <Nav>
         <a href='#' rel='noreferrer'>
-          <Logo desktop={mQuery.matches} />
+          <Logo desktop={mQuery} />
         </a>
         <Social>
           <Language>
-            <Translate desktop={mQuery.matches} />
+            <Translate desktop={mQuery} />
             <Span>English</Span>
           </Language>
           <a

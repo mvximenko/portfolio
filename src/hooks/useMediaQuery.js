@@ -1,15 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+
+const isDesktop = () => {
+  return window.innerWidth > 768 ? true : false;
+};
 
 const useMediaQuery = () => {
-  const [mQuery, setMQuery] = useState({
-    matches: window.innerWidth > 768 ? true : false,
-  });
+  const [mQuery, setMQuery] = useState(isDesktop());
+  const handleResize = useCallback(() => setMQuery(isDesktop()), []);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
-    mediaQuery.addEventListener('change', setMQuery);
-    return () => mediaQuery.removeEventListener('change', setMQuery);
-  }, []);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
 
   return mQuery;
 };

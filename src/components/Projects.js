@@ -27,11 +27,21 @@ const Projects = () => {
             <Info>
               <Paragraph>{project.title}</Paragraph>
               <Buttons>
-                <Link href={project.github} target='_blank' rel='noreferrer'>
-                  <Github desktop={mQuery.matches} />
+                <Link
+                  href={project.github}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='Github'
+                >
+                  <Github desktop={mQuery} />
                 </Link>
-                <Link href={project.demo} target='_blank' rel='noreferrer'>
-                  <Arrow desktop={mQuery.matches} />
+                <Link
+                  href={project.demo}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='Demo'
+                >
+                  <Arrow desktop={mQuery} />
                 </Link>
               </Buttons>
             </Info>

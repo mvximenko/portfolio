@@ -15,7 +15,7 @@ export const Heading = styled.h2`
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #6e819c;
+  color: #5d757e;
 
   @media only screen and (min-width: 550px) {
     font-size: 18px;
