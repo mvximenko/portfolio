@@ -58,10 +58,10 @@ export const Info = styled.div`
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  padding: 17px 40px;
+  padding: 17px 20px;
 
-  @media only screen and (min-width: 1024px) {
-    padding: 25px 60px;
+  @media only screen and (min-width: 550px) {
+    padding: 25px 40px;
   }
 `;
 
@@ -69,6 +69,9 @@ export const Paragraph = styled.p`
   font-size: 18px;
   font-weight: 700;
   color: #62748e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media only screen and (min-width: 550px) {
     font-size: 22px;
@@ -79,7 +82,17 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Button = styled.div`
+export const Buttons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  min-width: 85px;
+
+  @media only screen and (min-width: 1024px) {
+    min-width: 120px;
+  }
+`;
+
+export const Link = styled.a`
   width: 35px;
   height: 35px;
   display: flex;
@@ -87,6 +100,12 @@ export const Button = styled.div`
   align-items: center;
   background: #0184e8;
   border-radius: 10px;
+  transition: ease-in-out 0.15s;
+  fill: white;
+
+  &:hover {
+    background: #03a9f4;
+  }
 
   @media only screen and (min-width: 1024px) {
     width: 50px;

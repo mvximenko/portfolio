@@ -91,13 +91,14 @@ export const Icon = styled.div`
 
 export const Logo = styled.span`
   font-size: 35px;
-  padding-top: 7px;
+  padding-top: 8px;
   font-weight: 600;
+  user-select: none;
 
   ${({ color }) => `color: ${color};`}
 
   @media only screen and (min-width: 1024px) {
     font-size: 65px;
-    padding-top: 14px;
+    padding-top: 16px;
   }
 `;

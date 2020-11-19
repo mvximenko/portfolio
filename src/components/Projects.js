@@ -1,4 +1,5 @@
 import Arrow from './assets/Arrow';
+import Github from './assets/Github';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { projects } from '../data';
 import { Heading } from './SkillsStyles';
@@ -9,7 +10,8 @@ import {
   Cover,
   Info,
   Paragraph,
-  Button,
+  Buttons,
+  Link,
 } from './ProjectsStyles';
 
 const Projects = () => {
@@ -24,9 +26,14 @@ const Projects = () => {
             <Cover image={project.image}></Cover>
             <Info>
               <Paragraph>{project.title}</Paragraph>
-              <Button>
-                <Arrow desktop={mQuery.matches} />
-              </Button>
+              <Buttons>
+                <Link href={project.github} target='_blank' rel='noreferrer'>
+                  <Github desktop={mQuery.matches} />
+                </Link>
+                <Link href={project.demo} target='_blank' rel='noreferrer'>
+                  <Arrow desktop={mQuery.matches} />
+                </Link>
+              </Buttons>
             </Info>
           </Case>
         ))}

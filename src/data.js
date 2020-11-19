@@ -11,21 +11,29 @@ export const projects = [
   {
     title: 'Project 1',
     image:
-      'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&h=325&w=470',
+    github: 'https://github.com/mvximenko',
+    demo: 'https://github.com/mvximenko',
   },
   {
     title: 'Project 2',
     image:
-      'https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      'https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&h=325&w=470',
+    github: 'https://github.com/mvximenko',
+    demo: 'https://github.com/mvximenko',
   },
   {
     title: 'Project 3',
     image:
-      'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?cs=srgb&dl=pexels-kelvin-valerio-617278.jpg&fm=jpg',
+      'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=325&w=470',
+    github: 'https://github.com/mvximenko',
+    demo: 'https://github.com/mvximenko',
   },
   {
     title: 'Project 4',
     image:
-      'https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&h=325&w=470',
+    github: 'https://github.com/mvximenko',
+    demo: 'https://github.com/mvximenko',
   },
 ];
