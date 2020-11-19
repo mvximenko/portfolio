@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  margin: 35px 0 60px;
+  margin: 35px 0 40px;
 
   @media only screen and (min-width: 1024px) {
-    margin: 90px 0 140px;
+    margin: 90px 0 100px;
   }
 `;
 
@@ -30,7 +30,7 @@ export const Case = styled.div`
   overflow: hidden;
   border-radius: 30px;
   box-shadow: rgba(209, 230, 255, 0.57) 0px 2px 24px 1px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media only screen and (min-width: 550px) {
     height: 380px;
@@ -40,10 +40,7 @@ export const Case = styled.div`
     width: 48%;
     height: 369px;
     border-radius: 45px;
-
-    &:nth-child(n + 3) {
-      margin-top: 40px;
-    }
+    margin-bottom: 40px;
   }
 `;
 

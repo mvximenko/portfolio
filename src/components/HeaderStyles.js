@@ -61,7 +61,7 @@ export const Heading = styled.h1`
   font-weight: 900;
   color: rgba(0, 0, 0, 0.85);
   letter-spacing: 0.43px;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
 
   @media only screen and (min-width: 550px) {
     font-size: 26px;
@@ -71,7 +71,7 @@ export const Heading = styled.h1`
   @media only screen and (min-width: 1024px) {
     font-size: 42px;
     letter-spacing: 0.9px;
-    margin-bottom: 45px;
+    margin: 0 0 45px;
   }
 `;
 

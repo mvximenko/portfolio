@@ -30,14 +30,12 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     margin: 0;
     font-size: 15px;
-    line-height: 17px;
   }
 
   @media only screen and (min-width: 550px) {
     p,
     h2 {
       font-size: 18px;
-      line-height: 22px;
     }
   }
   
